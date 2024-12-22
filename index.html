@@ -40,7 +40,7 @@
           255,
           255,
           255,
-          0.54
+          0.9
         ); /* Semi-transparent black background */
         color: rgb(0, 0, 0);
         padding: 20px 20px 15px; /* Adjust padding to accommodate close button */
@@ -59,21 +59,23 @@
 
       #close-button {
         position: absolute;
-        top: 20px;
+        top: 14px;
         right: 10px;
-        background: none;
+        background: rgba(66, 65, 65, 0.3);
         border: none;
         color: rgb(0, 0, 0);
-        font-size: 20px;
+        font-size: 1px;
         cursor: pointer;
         outline: none;
         font-weight: bolder;
+        padding: 5px;
       }
 
       #navigation-buttons {
         justify-content: space-between;
         margin-top: 60px;
-        position: fixed;
+        margin-left: 40px;
+        
       }
 
       #close-button:hover {
@@ -106,7 +108,10 @@
         }
 
         #close-button {
-          font-size: 18px;
+          font-size: 10px;
+          border-radius: 100%;
+          padding: 2px;
+          margin-bottom: 10px;
         }
       }
 
@@ -191,8 +196,8 @@
         the corresponding model.
       </p>
       <div id="navigation-buttons">
-        <button class="nav-button" id="prev-button" disabled>Previous</button>
-        <button class="nav-button" id="next-button">Next</button>
+        <button class="nav-button" id="prev-button" style="width:100px;" disabled>Previous</button>
+        <button class="nav-button" id="next-button" style="width: 100px;">Next</button>
       </div>
     </div>
     <!-- Scene for the first .mind file -->
